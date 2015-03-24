@@ -1,0 +1,174 @@
+
+/* Tags and Elements */
+.container{
+    width: 80%;
+    max-width: 52em;
+    margin: 0 auto;
+}
+
+h1{
+    font-family: Bitter, serif;
+    font-size: 20px;
+}
+
+h2{
+    font-family: "Poiret One";
+    font-size: 18px;
+}
+
+h3{
+    font-family: "Cardo";
+}
+
+p{
+    font-family: "Goudy Bookletter 1911";
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+table{
+    width: 100%;
+    margin-bottom: 20px;
+    padding-top: 0;
+}
+
+
+table td{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 13px;
+    font-family: "Goudy Bookletter 1911";
+    line-height: 15px;
+}
+
+firstc_items{
+    width: 70%;
+    float: left;
+}
+
+tr{
+    margin-bottom: 0;
+    padding-top: 0;
+}
+
+#firstc_items{
+    float: right;
+    width: 70%;
+}
+
+#secondc_items{
+    float: right;
+    width: 70%;
+}
+
+#thirdc_items{
+    float: right;
+    width: 70%;
+}
+/* Repeating Components */
+
+.mapwrap iframe{
+    margin: 25px;
+    float: right;
+    position: absolute;
+}
+.description p{
+    float: left;
+    width: 45%;
+    font-size: 15px;
+}
+
+.first_course{
+    overflow: hidden;
+}
+
+.second_course{
+    overflow: hidden;
+}
+
+.third_course{
+    overflow: hidden;
+}
+
+.course_names{
+    float: left;
+    width: 20%;
+    padding-right: 15px;
+    
+}
+
+.menutab{
+    width: 100%;
+    height: 40px;
+    background-color: #f1f0ec;
+    text-align: center;
+}
+
+.menutab p{
+    padding-top: 8px;
+    font-size: 18px;
+}
+
+.header{
+    width: 100%;
+    height: 230px;
+    background-image: url(header-img.png);    
+}
+
+
+    
+.site_footer{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+/* Mobile Size */
+@media screen and (min-width: 10em) and (max-width:29.9em){
+    .container{
+        display: table;
+        width: 90%;
+    }
+    
+    .header{
+        align-content: center;
+        width: 100%;
+    }
+    
+    .site_content{
+        display: table-footer-group;
+    }
+    
+    .site_footer{
+        display:table-header-group;
+    }
+
+    .menutab{
+        width: 100%;
+        height: 30px;
+        background-color: #f1f0ec;
+        text-align: center;
+    }
+
+    .menutab p{
+        padding-top: 4px;
+        font-size: 18px;
+    }
+    
+    .course_names br{
+        display: none;
+        float: none;
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+
