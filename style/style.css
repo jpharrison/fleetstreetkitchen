@@ -1,5 +1,16 @@
 
 /* Tags and Elements */
+body{
+
+}
+
+.header{
+    width: 100%;
+    height: 230px;
+    background-image: url(header-img.png);  
+    background-position: top center;
+}
+
 .container{
     width: 80%;
     max-width: 52em;
@@ -69,17 +80,42 @@ tr{
     float: right;
     width: 70%;
 }
+
+#menu-spacer{
+    height: 120px;
+    width: auto;
+    background-image: url(FSK_food1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+}
+#about-spacer{
+    height: 120px;
+    width: auto;
+    background-image: url(fsksign);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 10px;
+}
 /* Repeating Components */
 
 .mapwrap iframe{
     margin: 25px;
     float: right;
     position: absolute;
+    width: 45%;
+    max-width: 400px;
+        
 }
+
 .description p{
     float: left;
     width: 45%;
     font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 25px
 }
 
 .first_course{
@@ -112,14 +148,6 @@ tr{
     padding-top: 8px;
     font-size: 18px;
 }
-
-.header{
-    width: 100%;
-    height: 230px;
-    background-image: url(header-img.png);    
-}
-
-
     
 .site_footer{
     width: 100%;
@@ -129,8 +157,12 @@ tr{
 
 /* Mobile Size */
 @media screen and (min-width: 10em) and (max-width:29.9em){
+    
+    .box{
+        display:table;
+    }
+    
     .container{
-        display: table;
         width: 90%;
     }
     
@@ -139,12 +171,29 @@ tr{
         width: 100%;
     }
     
-    .site_content{
-        display: table-footer-group;
+    #info{
+        display: table-header-group;
     }
     
-    .site_footer{
-        display:table-header-group;
+    .course_names{
+        width: 100%;
+        text-align: center;
+    }
+    
+    h1 br{
+        display: none; 
+    }
+    
+    #firstc_items{
+    width: 100%;
+    }
+
+    #secondc_items{
+        width: 100%;
+    }
+
+    #thirdc_items{
+        width: 100%;
     }
 
     .menutab{
@@ -164,7 +213,37 @@ tr{
         float: none;
         width: 100%;
     }
-
+    .mapwrap iframe{
+        display: none;
+    }
+    .description p{
+        float: left;
+        width: 100%;
+        font-size: 15px;
+    }
+    
+    #menu-spacer{
+        height: 80px;
+        width: auto;
+        background-image: url(FSK_food1.jpg);
+        background-size: 200%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: top;
+        margin-bottom: 20px;
+    }
+    
+    #about-spacer{
+        height: 80px;
+        width: auto;
+        background-image: url(fsksign);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 200%;
+        background-position: center;
+        margin-bottom: 10px;
+    }
 }
 
 
